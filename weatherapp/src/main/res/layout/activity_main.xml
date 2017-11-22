@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aidina.training.weatherapp.MainActivity"
+    android:background="#2196F3">
+
+    <TextView android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:text="Kuala Lumpur, MY">
+    </TextView>
+
+
+    <TextView android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/location"
+        android:drawableTop="@drawable/ic_temperature" />
+
+    <TextView android:id="@+id/degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/temperature"
+        android:text="29"/>
+
+    <TextView android:id="@+id/celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/degrees"
+        android:layout_below="@+id/location"
+        android:drawableTop="@drawable/ic_celcius" />
+    
+    <Button android:id="@+id/button_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/refresh"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_thunderstorm_large"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

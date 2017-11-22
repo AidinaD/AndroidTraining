@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="refresh">Refresh</string>
+    <string name="credit">CREDIT Climacons by @adamwhitcroft</string>
+    <string name="sym_percent">%</string>
+    <string name="sym_temp">C</string>
+    <string name="wind">mps</string>
+</resources>
